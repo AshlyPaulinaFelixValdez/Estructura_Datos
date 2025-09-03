@@ -1,4 +1,12 @@
-# Programa sencillo: pide tu nombre y te saluda
-nombre = input("¿Cómo te llamas? ")
-print(f"¡Hola, {nombre}! Bienvenido a Python 😃")
-#primer comentario
+# Declaración
+numeros = [1, 2, 3, 4]
+
+# Asignación
+numeros[0] = 10
+
+# Leer
+print(numeros[2]) # Imprime 3
+
+# Analiza
+for n in numeros:
+    print(n)
