@@ -1,0 +1,22 @@
+using system;
+
+// Tipo de dato abstracto
+class persona {
+    public string Nombre { get; set; }
+    public string Apellido { get; set; }
+
+    public persona(string nombre, string apellido) {
+        Nombre = nombre;
+        Apellido = apellido;
+    }
+}
+
+// arreglo
+class program {
+    static void main(string[] args) {
+        persona[] personas = new persona[3];
+        personas[0] = new persona("Ana", "López");
+        personas[1] = new persona("Luis", "García");
+        personas[2] = new persona("Paola", "Valdez");
+    }
+}
