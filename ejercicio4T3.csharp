@@ -1,0 +1,12 @@
+// insertar a la derecha
+
+using system;
+using system.collections.generic;
+
+class program {
+    static void main() {
+        list<int> numeros = new list<int>() {10, 20, 30};
+        numeros.add(40); // inserta al final
+        console.writeline(string.join(", ", numeros));
+    }
+}
