@@ -10,6 +10,7 @@ body{
 
 }
 .tablero{
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(3,100px);
     grid-template-rows: repeat(3,100px);
@@ -25,4 +26,8 @@ body{
     background-color: white;
     border: 1px solid #333;
     cursor: pointer;
+}
+
+.hidden{
+    display: none;
 }
