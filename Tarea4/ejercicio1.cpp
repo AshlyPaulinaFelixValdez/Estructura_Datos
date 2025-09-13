@@ -19,5 +19,5 @@ int main() {
         cout << endl;
     }
 
-    return o;
+    return 0;
 }
