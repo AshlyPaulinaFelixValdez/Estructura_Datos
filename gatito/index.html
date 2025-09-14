@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juego del Gatito</title>
+    <meta name="description" content="Versión web del juego del gatito (3 en raya)" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="header">
+        <h1>Juego del Gatito</h1>
+        <p class="subtitle">3 en raya con estilo felino 🐱</p>
+      </header>
+
+      <section class="controls" aria-label="Controles del juego">
+        <div class="toggles">
+          <label class="toggle">
+            <input id="vsCpu" type="checkbox" />
+            <span>Jugar vs CPU</span>
+          </label>
+        </div>
+        <div class="buttons">
+          <button id="btnReiniciar" class="btn">Reiniciar ronda</button>
+          <button id="btnResetMarcador" class="btn btn-secondary">Reset marcador</button>
+        </div>
+      </section>
+
+      <section class="status" aria-live="polite">
+        <div id="turno" class="turno">Turno: <span id="jugador">😺</span></div>
+        <div class="marcador">
+          <div class="score"><span class="icon">😺</span> <span id="scoreX">0</span></div>
+          <div class="score"><span class="icon">🐾</span> <span id="scoreO">0</span></div>
+          <div class="score"><span class="icon">🤝</span> <span id="scoreT">0</span></div>
+        </div>
+      </section>
+
+      <section class="tablero" role="grid" aria-label="Tablero 3 por 3">
+        <!-- 9 celdas -->
+        <button class="cell" role="gridcell" data-index="0" aria-label="Celda 1"></button>
+        <button class="cell" role="gridcell" data-index="1" aria-label="Celda 2"></button>
+        <button class="cell" role="gridcell" data-index="2" aria-label="Celda 3"></button>
+        <button class="cell" role="gridcell" data-index="3" aria-label="Celda 4"></button>
+        <button class="cell" role="gridcell" data-index="4" aria-label="Celda 5"></button>
+        <button class="cell" role="gridcell" data-index="5" aria-label="Celda 6"></button>
+        <button class="cell" role="gridcell" data-index="6" aria-label="Celda 7"></button>
+        <button class="cell" role="gridcell" data-index="7" aria-label="Celda 8"></button>
+        <button class="cell" role="gridcell" data-index="8" aria-label="Celda 9"></button>
+      </section>
+
+      <section id="mensajeFinal" class="mensaje oculto" aria-live="assertive"></section>
+
+      <footer class="footer">
+        <small>Hecho con <span aria-hidden="true">🐾</span> para divertirse</small>
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
